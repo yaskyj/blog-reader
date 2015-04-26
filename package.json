@@ -2,6 +2,18 @@
   "name": "zyring",
   "version": "0.0.0",
   "dependencies": {
+    "autoprefixer": "^5.1.1",
+    "browserslist": "^0.3.3",
+    "caniuse-db": "^1.0.30000145",
+    "for-own": "^0.1.3",
+    "glob": "^5.0.5",
+    "grunt-karma": "^0.10.1",
+    "isobject": "^1.0.0",
+    "lodash": "^3.7.0",
+    "minimatch": "^2.0.4",
+    "num2fraction": "^1.1.0",
+    "parse-glob": "^3.0.2",
+    "postcss": "^4.1.6",
     "socket.io-client": "^1.3.4"
   },
   "repository": {},
