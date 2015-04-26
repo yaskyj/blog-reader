@@ -1,17 +1,10 @@
 'use strict';
+blogReader.controller('MainCtrl', function ($scope) {
+  $scope.entryText = '';
 
-/**
- * @ngdoc function
- * @name zyringApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the zyringApp
- */
-angular.module('zyringApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  //Testing blog updating
+  // $scope.$watch('[entryText]', function() {
+  //       console.log($scope.entryText);
+  //   }, true);
+
+});

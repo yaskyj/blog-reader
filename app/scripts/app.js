@@ -1,21 +1,7 @@
 'use strict';
+var blogReader = angular.module('blogReader', ['ngAnimate', 'ngResource', 'ngRoute', 'ngTouch', 'textAngular']);
 
-/**
- * @ngdoc overview
- * @name zyringApp
- * @description
- * # zyringApp
- *
- * Main module of the application.
- */
-angular
-  .module('zyringApp', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+blogReader.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
