@@ -1,1 +1,11 @@
-<text-angular ta-toolbar="[['h1', 'h3'], ['bold', 'italics', 'underline', 'quote'], ['ul', 'ol'], ['justifyLeft', 'justifyCenter'], ['insertImage', 'insertLink', 'insertVideo']]" ng-model="entryText"></text-angular>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="text-editor">
+        <text-angular-toolbar ta-toolbar="[['h1', 'h3'], ['bold', 'italics', 'underline', 'quote'], ['ul', 'ol'], ['justifyLeft', 'justifyCenter'], ['insertImage', 'insertLink', 'insertVideo']]" ng-show="editorFocus===true" name="text-toolbar"></text-angular-toolbar>
+        <div text-angular ng-model="entryText" ta-target-toolbars='text-toolbar' ng-focus="editorFocus=true" ng-blur="editorFocus=false">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
